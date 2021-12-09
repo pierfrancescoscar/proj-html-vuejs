@@ -5,6 +5,8 @@
       <TopHeader :navLink="menuLink" />
     <!-- Logo -->
       <HeaderLogo />
+    <!-- Main Navigation -->
+      <Header :mainNavigation="mainNavigation" />
     </header>
   </div>
 </template>
@@ -12,6 +14,7 @@
 <script>
 import TopHeader from '@/components/TopHeader.vue';
 import HeaderLogo from '@/components/HeaderLogo.vue';
+import Header from '@/components/Header.vue';
 
 
 export default {
@@ -19,6 +22,7 @@ export default {
   components: {
     TopHeader,
     HeaderLogo,
+    Header,
     
   },
   data() {
@@ -45,7 +49,51 @@ export default {
                     url: '/',
                     
                 },
+            ],
+
+            mainNavigation: [
+              {
+                    text: 'Home',
+                    url: '/',
+                },
+
+                {
+                    text: 'Elements',
+                    url: '/',
+                },
+
+                {
+                    text: 'Features',
+                    url: '/',
+                    
+                },
+
+                {
+                    text: 'Pages',
+                    url: '/',
+                    
+                },
+
+                {
+                    text: 'Portfolio',
+                    url: '/',
+                    
+                },
+
+                {
+                    text: 'Blog',
+                    url: '/',
+                    
+                },
+
+                {
+                    text: 'Shop',
+                    url: '/',
+                    
+                },
             ]
+
+            
         }
     }
 }
