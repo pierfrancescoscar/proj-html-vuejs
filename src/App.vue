@@ -1,6 +1,9 @@
 <template>
   <div id="app">
-    <TopHeader />
+    <header>
+    <!-- Blue Top Header Navigation -->
+      <TopHeader />
+    </header>
   </div>
 </template>
 
