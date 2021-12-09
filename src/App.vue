@@ -13,7 +13,7 @@
       <!-- Main Articles -->
       <MainArticles :articles="mainPosts" />
       <!-- Popular, Featured Post List -->
-      <PostList :popular="popularLinks" />
+      <PostList :popular="popularLinks" :recent="recentLinks" />
     </main>
   </div>
 </template>
@@ -176,6 +176,39 @@ export default {
                {
                     image: 'blog-59',
                     text: '5 Lovely Walks in New York',
+                    date: 'January 12, 2019',
+                    url: '/',
+                },
+            ],
+
+            recentLinks: [
+               {
+                    image: 'blog-65',
+                    text: 'Main Reasons to Stop Text and Driving',
+                    date: 'January 12, 2019',
+                    url: '/',
+                },
+               {
+                    image: 'blog-66',
+                    text: 'Tips To Help You Quickly Prepare your Lunch',
+                    date: 'January 12, 2019',
+                    url: '/',
+                },
+               {
+                    image: 'blog-67',
+                    text: 'Why Should I Buy a Smartwatch?',
+                    date: 'January 12, 2019',
+                    url: '/',
+                },
+               {
+                    image: 'blog-68',
+                    text: 'The Best Augmented reality smartglasses',
+                    date: 'January 12, 2019',
+                    url: '/',
+                },
+               {
+                    image: 'blog-69',
+                    text: '12 Healthiest Foods to Eat for Breakfast',
                     date: 'January 12, 2019',
                     url: '/',
                 },

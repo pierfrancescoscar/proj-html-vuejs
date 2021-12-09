@@ -27,6 +27,26 @@
                 </div>
                 <div class="col-4">
                     <h3 class="text-uppercase">Recent Posts</h3>
+                    <nav>
+                        <ul class="ps-0">
+                            <li class="list-unstyled d-flex mb-3 mt-3" v-for="(link, index) in recent" :key="`article-${index}`">
+
+                                <img class="img-fluid me-3 mb-3" :src="require(`@/assets/${link.image}.jpg`)" :alt="link.text">
+
+                                <div class="link-content">
+
+                                    <div class="link-title">
+                                        <a class="text-decoration-none" :href="link.url">{{link.text}}</a>
+                                    </div>
+
+                                    <div class="link-date">
+                                        <span>{{link.date}}</span>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="col-4">
                     <h3 class="text-uppercase">Featured Posts</h3>
@@ -67,6 +87,8 @@ section {
 
     img {
         width: 50px;
+        height: 50px;
+        object-fit: cover;
     }
 
     a {
