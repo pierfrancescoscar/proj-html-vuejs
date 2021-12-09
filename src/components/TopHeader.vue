@@ -10,7 +10,7 @@
                     <!-- Right - Navigation  -->
                     <nav>
                         <ul class="d-flex align-items-center mb-0">
-                            <li class="list-unstyled" v-for="(link, index) in menuLink" :key="`link-${index}`">
+                            <li class="list-unstyled" v-for="(link, index) in navLink" :key="`link-${index}`">
                                 <a class="text-uppercase text-decoration-none me-4" :href="link.url">{{link.text}}</a>
                             </li>
                         </ul>
@@ -26,33 +26,10 @@
 <script>
 export default {
     name: 'TopHeader',
-    data() {
-        return {
-            menuLink: [
-                {
-                    text: 'Sign in',
-                    url: '/',
-                },
-
-                {
-                    text: 'About us',
-                    url: '/',
-                },
-
-                {
-                    text: 'Contact us',
-                    url: '/',
-                    
-                },
-
-                {
-                    text: 'Buy now',
-                    url: '/',
-                    
-                },
-            ]
-        }
+    props: {
+        navLink: Array,
     }
+    
 }
 </script>
 

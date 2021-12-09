@@ -2,7 +2,7 @@
   <div id="app">
     <header>
     <!-- Blue Top Header Navigation -->
-      <TopHeader />
+      <TopHeader :navLink="menuLink" />
     <!-- Logo -->
       <HeaderLogo />
     </header>
@@ -20,7 +20,34 @@ export default {
     TopHeader,
     HeaderLogo,
     
-  }
+  },
+  data() {
+        return {
+            menuLink: [
+                {
+                    text: 'Sign in',
+                    url: '/',
+                },
+
+                {
+                    text: 'About us',
+                    url: '/',
+                },
+
+                {
+                    text: 'Contact us',
+                    url: '/',
+                    
+                },
+
+                {
+                    text: 'Buy now',
+                    url: '/',
+                    
+                },
+            ]
+        }
+    }
 }
 </script>
 
