@@ -8,6 +8,11 @@
     <!-- Main Navigation -->
       <Header :mainNavigation="mainNavigation" />
     </header>
+
+    <main>
+      <!-- Main Articles -->
+      <MainArticles :articles="mainPosts" />
+    </main>
   </div>
 </template>
 
@@ -15,6 +20,7 @@
 import TopHeader from '@/components/TopHeader.vue';
 import HeaderLogo from '@/components/HeaderLogo.vue';
 import Header from '@/components/Header.vue';
+import MainArticles from '@/components/MainArticles.vue';
 
 
 export default {
@@ -23,6 +29,7 @@ export default {
     TopHeader,
     HeaderLogo,
     Header,
+    MainArticles,
     
   },
   data() {
@@ -91,7 +98,51 @@ export default {
                     url: '/',
                     
                 },
-            ]
+            ],
+
+            mainPosts: [
+                {
+                    image: 'blog-46',
+                    text: 'How To Take Better Concert Pictures in 30 Seconds',
+                    category: 'Photography',
+                    url: '/',
+                },
+
+                {
+                    image: 'blog-47',
+                    text: 'Gadget That Make Your Smartphone Even Smarter',
+                    category: 'Gadgets',
+                    url: '/',
+                },
+
+                {
+                    image: 'blog-48',
+                    text: '20 Top-Rated Tourist Attractions in Manhattan',
+                    category: 'Travel',
+                    url: '/',
+                },
+
+                {
+                    image: 'blog-49',
+                    text: 'The Best Way To Ride a Motorcycle',
+                    category: 'Lifestyle',
+                    url: '/',
+                },
+
+                {
+                    image: 'blog-50',
+                    text: '5 Fun Things to Do at the Beach',
+                    category: 'Travel',
+                    url: '/',
+                },
+
+                {
+                    image: 'blog-51',
+                    text: 'Amazingly Fresh Fruit And Herb Drinks For Summer',
+                    category: 'Recipies',
+                    url: '/',
+                },
+            ],
 
             
         }
