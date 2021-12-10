@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-8">
                   <nav>
-                      <ul>
+                      <ul class="ps-0">
                           <SingleBlogPost v-for="(post, index) in blogPost" :key="`post-${index}`"
                            :image="post.image"
                            :title="post.title"
