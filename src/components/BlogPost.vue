@@ -43,7 +43,7 @@
 
                   </div>
 
-                  <div class="tweets-container d-flex pt-4">
+                  <div class="tweets-container d-flex pt-4 pb-5">
 
                         <div class="twitter-icon pe-3">
                             <i class="fab fa-twitter"></i>
@@ -61,6 +61,20 @@
                         </div>
 
                   </div>
+
+                <h3 class="text-uppercase pb-3">Photos from Instagram</h3>
+
+                <div class="instagram-content d-flex flex-wrap">
+                
+                    <div class="instagram-feed"
+                    v-for="(element, index) in instaPost" :key="`igfeed-${index}`">
+
+                        <img class="img-fluid" :src="require(`@/assets/${element}.jpg`)" alt="insta-feed">
+
+                    </div>
+
+                </div>
+
               </div>
           </div>
       </div>
@@ -78,6 +92,7 @@ export default {
 
     props: {
         blogPost: Array,
+        instaPost: Array,
     }
 
 }
@@ -109,6 +124,10 @@ section {
     .tweet-date {
         color: $text-4;
         font-size: $minor-fs;
+    }
+
+    .instagram-feed {
+        width: calc(100% / 3);
     }
 
 </style>

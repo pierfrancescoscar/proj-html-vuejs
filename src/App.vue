@@ -17,7 +17,7 @@
       <!-- Categories Blue Bar -->
       <Categories :categories="categories" />
       <!-- All Blog Post List -->
-      <BlogPost :blogPost="blogPost" />
+      <BlogPost :blogPost="blogPost" :instaPost="instagramPhotos" />
     </main>
   </div>
 </template>
@@ -317,6 +317,15 @@ export default {
                 },
                 
             ],
+
+            instagramPhotos: [
+                '29739607_2020680068220520_4509928046932787200_n', '30087804_253872848488989_8792603541668626432_n',
+                '29415620_196477127626244_3250318472361541632_n',
+                '30078414_1274410412703843_8290935809419247616_n',
+                '30077195_2066750973610181_3733150062893596672_n',
+                '29415304_166583630713703_1032667922171953152_n',
+            ],
+
             
         }
     }
