@@ -3,7 +3,7 @@
       <section class="container">
           <div class="row">
               <div class="col-3">
-                  <h3 class="text-white text-uppercase">About the Blog</h3>
+                  <h3 class="text-white text-uppercase pb-3">About the Blog</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet.</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eligendi cumque suscipit accusantium...</p>
                   <h3 class="text-white text-uppercase view-more">View more
@@ -11,7 +11,7 @@
                   </h3>
               </div>
               <div class="col-3">
-                  <h3 class="text-white text-uppercase">Recent Posts</h3>
+                  <h3 class="text-white text-uppercase pb-3">Recent Posts</h3>
                     <nav>
                             <ul class="ps-0">
                                 <li class="list-unstyled pe-2" v-for="(element, index) in recentPosts" :key="`post-${index}`">
@@ -40,7 +40,7 @@
                     </nav>
               </div>
               <div class="col-3">
-                  <h3 class="text-white text-uppercase">Recent Comments</h3>
+                  <h3 class="text-white text-uppercase pb-3">Recent Comments</h3>
                   <nav>
                       <ul class="ps-0">
                           <li class="list-unstyled">
@@ -80,7 +80,26 @@
               </div>
               <div class="col-3">
 
-                <h3 class="text-white text-uppercase">Categories</h3>
+                <h3 class="text-white text-uppercase pb-3">Categories</h3>
+
+                    <nav>
+                        <ul class="ps-0 d-flex flex-wrap">
+                            <li class="list-unstyled me-2 mb-4" v-for="(element, index) in footerCategories" :key="`category-${index}`">
+                                <a class="footer-categories text-uppercase text-decoration-none rounded p-2" :href="element.url">
+                                    {{element.text}}
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                    <!-- <div v-for="(element, index) in footerCategories" :key="`category-${index}`" class="category-container">
+
+                        <a class="footer-categories text-uppercase text-decoration-none rounded p-2" :href="element.url" >
+                        {{element.text}}
+                        </a>
+
+                    </div> -->
 
               </div>
           </div>
@@ -93,6 +112,7 @@ export default {
     name: 'Footer',
     props: {
         recentPosts: Array,
+        footerCategories: Array,
     }
 
 }
@@ -141,5 +161,13 @@ section {
 
     .blue-link, .blue-arrow  {
         color: $text-4;
+    }
+
+    .footer-categories {
+        color: $text-1;
+        font-size: $minor-fs;
+        font-weight: $strong-fw;
+        background-color: $background-12;
+
     }
 </style>

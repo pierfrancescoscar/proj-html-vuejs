@@ -22,7 +22,7 @@
 
     <footer>
         <!-- Main Footer Section -->
-        <Footer :recentPosts="recentFooterPosts" />
+        <Footer :recentPosts="recentFooterPosts" :footerCategories="footerCategories"/>
         <!-- Footer Copyright Section -->
         <BottomFooter />
     </footer>
@@ -380,6 +380,61 @@ export default {
                     url: '/',
                 },
             ],
+
+            footerCategories: [
+                {
+                    text: 'Gadgets',
+                    url: '/',
+                },
+                {
+                    text: 'Photography',
+                    url: '/',
+                },
+                {
+                    text: 'Lifestyle',
+                    url: '/',
+                },
+                {
+                    text: 'Fashion',
+                    url: '/',
+                },
+                {
+                    text: 'Recipes',
+                    url: '/',
+                },
+                {
+                    text: 'Travel',
+                    url: '/',
+                },
+                {
+                    text: 'Business',
+                    url: '/',
+                },
+                {
+                    text: 'Architecture',
+                    url: '/',
+                },
+                {
+                    text: 'Reviews',
+                    url: '/',
+                },
+                {
+                    text: 'Sports',
+                    url: '/',
+                },
+                {
+                    text: 'Videos',
+                    url: '/',
+                },
+                {
+                    text: 'Technology',
+                    url: '/',
+                },
+                {
+                    text: 'Design',
+                    url: '/',
+                },
+            ]
 
         }
     }
