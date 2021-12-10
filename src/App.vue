@@ -17,7 +17,7 @@
       <!-- Categories Blue Bar -->
       <Categories :categories="categories" />
       <!-- All Blog Post List -->
-      <BlogPost :blogPost="blogPost" :instaPost="instagramPhotos" />
+      <BlogPost :blogPost="blogPost" :instaPost="instagramPhotos" :instaTags="instaTags" />
     </main>
   </div>
 </template>
@@ -324,6 +324,34 @@ export default {
                 '30078414_1274410412703843_8290935809419247616_n',
                 '30077195_2066750973610181_3733150062893596672_n',
                 '29415304_166583630713703_1032667922171953152_n',
+            ],
+
+            instaTags: [
+
+                {
+                    text: 'Design',
+                    url: '/',
+                },
+
+                {
+                    text: 'Brands',
+                    url: '/',
+                },
+
+                {
+                    text: 'Video',
+                    url: '/',
+                },
+
+                {
+                    text: 'Business',
+                    url: '/',
+                },
+
+                {
+                    text: 'Travel',
+                    url: '/',
+                },
             ],
 
             

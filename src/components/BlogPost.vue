@@ -62,18 +62,28 @@
 
                   </div>
 
-                <h3 class="text-uppercase pb-3">Photos from Instagram</h3>
+                    <h3 class="text-uppercase pb-3">Photos from Instagram</h3>
 
-                <div class="instagram-content d-flex flex-wrap">
-                
-                    <div class="instagram-feed"
-                    v-for="(element, index) in instaPost" :key="`igfeed-${index}`">
+                    <div class="instagram-content d-flex flex-wrap">
+                    
+                        <div class="instagram-feed"
+                        v-for="(element, index) in instaPost" :key="`igfeed-${index}`">
 
-                        <img class="img-fluid" :src="require(`@/assets/${element}.jpg`)" alt="insta-feed">
+                            <img class="img-fluid" :src="require(`@/assets/${element}.jpg`)" alt="insta-feed">
+
+                        </div>
 
                     </div>
 
-                </div>
+                    <h3 class="text-uppercase py-4">Tags</h3>
+
+                        <nav>
+                            <ul class="d-flex ps-0">
+                                <li class="list-unstyled pe-2" v-for="(element, index) in instaTags" :key="`tag-${index}`">
+                                    <a class="text-decoration-none text-uppercase px-2 py-1 rounded-pill" :href="element.url">{{element.text}}</a>
+                                </li>
+                            </ul>
+                        </nav>
 
               </div>
           </div>
@@ -93,6 +103,7 @@ export default {
     props: {
         blogPost: Array,
         instaPost: Array,
+        instaTags: Array,
     }
 
 }
@@ -116,6 +127,13 @@ section {
         font-size: $big-fs;
     }
 
+    a {
+        color: $text-1;
+        font-size: $minor-fs;
+        background-color: $background-7;
+        font-weight: $strong-fw;
+    }
+
     .tweet {
         color: $text-3;
         font-size: $medium-fs;
@@ -128,6 +146,10 @@ section {
 
     .instagram-feed {
         width: calc(100% / 3);
+    }
+
+    .instagram-content {
+        cursor: pointer;
     }
 
 </style>
