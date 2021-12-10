@@ -14,6 +14,8 @@
       <MainArticles :articles="mainPosts" />
       <!-- Popular, Featured Post List -->
       <PostList :popular="popularLinks" :recent="recentLinks" />
+      <!-- Categories Blue Bar -->
+      <Categories :categories="categories" />
     </main>
   </div>
 </template>
@@ -24,6 +26,7 @@ import HeaderLogo from '@/components/HeaderLogo.vue';
 import Header from '@/components/Header.vue';
 import MainArticles from '@/components/MainArticles.vue';
 import PostList from '@/components/PostList.vue';
+import Categories from '@/components/Categories.vue';
 
 
 export default {
@@ -34,6 +37,7 @@ export default {
     Header,
     MainArticles,
     PostList,
+    Categories,
     
   },
   data() {
@@ -210,6 +214,38 @@ export default {
                     image: 'blog-69',
                     text: '12 Healthiest Foods to Eat for Breakfast',
                     date: 'January 12, 2019',
+                    url: '/',
+                },
+            ],
+
+            categories: [
+                {
+                    text: 'Gadgets',
+                    url: '/',
+                },
+
+                {
+                    text: 'Photography',
+                    url: '/',
+                },
+
+                {
+                    text: 'Lifestyle',
+                    url: '/',
+                },
+
+                {
+                    text: 'Fashion',
+                    url: '/',
+                },
+
+                {
+                    text: 'Recipies',
+                    url: '/',
+                },
+
+                {
+                    text: 'Travel',
                     url: '/',
                 },
             ],
