@@ -4,8 +4,8 @@
           <div class="row">
               <div class="col-3">
                   <h3 class="text-white text-uppercase">About the Blog</h3>
-                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet.</p>
-                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eligendi cumque suscipit accusantium...</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eligendi cumque suscipit accusantium...</p>
                   <h3 class="text-white text-uppercase view-more">View more
                       <i class="fas fa-chevron-right"></i>
                   </h3>
