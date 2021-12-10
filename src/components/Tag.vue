@@ -30,6 +30,9 @@ li {
     background-color: $background-8;
     width: 150px;
     cursor: pointer;
+    &:hover {
+        outline: 5px solid $border-8;
+    }
     
 }
 

@@ -20,6 +20,26 @@
                             
                       </ul>
                   </nav>
+
+                  <div class="select-page d-flex justify-content-end">
+                      <div class="numbered-pages rounded">
+                          <span class="select icon">
+                              <i class="arrow-icon fas fa-chevron-left"></i>
+                          </span>
+                          <span class="select one">
+                              1
+                          </span>
+                          <span class="select two">
+                              2
+                          </span>
+                          <span class="select three">
+                              3
+                          </span>
+                          <span class="select icon-2">
+                              <i class="arrow-icon fas fa-chevron-right"></i>
+                          </span>
+                      </div>
+                  </div>
               </div>
               <div class="col-4">
                   <h3 class="text-uppercase pb-2">Latest from Twitter</h3>
@@ -180,6 +200,26 @@ section {
         color: $text-4;
         font-size: $medium-fs;
         cursor: pointer;
+    }
+
+    .select {
+        color: $text-4;
+    }
+
+    .numbered-pages {
+        border: 1px solid grey;
+    }
+
+    .arrow-icon {
+        font-size: $minor-fs;
+    }
+
+    .icon, .one, .two {
+        border-right: 1px solid grey;
+    }
+
+    .icon-2 {
+        border-left: 1px solid grey;
     }
 
 
