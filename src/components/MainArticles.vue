@@ -5,17 +5,17 @@
               <div class="col-12">
                   <nav>
                       <ul class="d-flex flex-wrap ps-0">
-                          <li class="list-unstyled pe-4" v-for="(post, index) in articles" :key="`article-${index}`">
+                          <li class="col-4 list-unstyled pe-4" v-for="(post, index) in articles" :key="`article-${index}`">
                               <div>
                                   <img class="img-fluid" :src="require(`@/assets/${post.image}.jpg`)" :alt="post.text">
 
-                                    <div class="post-content w-100">
+                                    <div class="post-content p-3">
                                         <div class="category-tag pb-3">
                                             <span class="text-white text-uppercase p-2 rounded">
                                                 {{post.category}}
                                             </span>
                                         </div>
-                                        <div class="post-title w-100">
+                                        <div class="post-title">
                                             <a class="text-decoration-none text-white" :href="post.url">{{post.text}}</a>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@ section {
 }
 
     li {
-        width: calc(100% / 3);
+        // width: calc(100% / 3);
         position: relative;
     
     }
@@ -59,7 +59,7 @@ section {
     }
 
     a {
-        font-size: $medium-fs;
+        font-size: $big-fs;
         font-weight: $extrastrong-fw;
     }
 
@@ -70,7 +70,8 @@ section {
     .post-content { 
         position: absolute;
         bottom: 20px;
-        left: 20px;
+        left: 0px;
+        right: 20px;
     }
         
     

@@ -8,7 +8,7 @@
                         <ul class="ps-0">
                             <li class="list-unstyled d-flex mb-3 mt-3" v-for="(link, index) in popular" :key="`article-${index}`">
 
-                                <img class="img-fluid me-3 mb-3" :src="require(`@/assets/${link.image}.jpg`)" :alt="link.text">
+                                <img class="post-img img-fluid me-3 mb-3" :src="require(`@/assets/${link.image}.jpg`)" :alt="link.text">
 
                                 <div class="link-content">
 
@@ -31,7 +31,7 @@
                         <ul class="ps-0">
                             <li class="list-unstyled d-flex mb-3 mt-3" v-for="(link, index) in recent" :key="`article-${index}`">
 
-                                <img class="img-fluid me-3 mb-3" :src="require(`@/assets/${link.image}.jpg`)" :alt="link.text">
+                                <img class="post-img img-fluid me-3 mb-3" :src="require(`@/assets/${link.image}.jpg`)" :alt="link.text">
 
                                 <div class="link-content">
 
@@ -49,7 +49,31 @@
                     </nav>
                 </div>
                 <div class="col-4">
-                    <h3 class="text-uppercase">Featured Posts</h3>
+                    <h3 class="text-uppercase mb-4">Featured Posts</h3>
+                        <div class="post-card">
+                            <img class="img-fluid" src="../assets/blog-66.jpg" alt="recipies-article">
+
+                            <div class="post-content p-3">
+                                <div class="category-tag pb-3">
+                                    <span class="category text-white text-uppercase p-2 rounded">
+                                        Recipies
+                                    </span>
+                                </div>
+                                <div class="post-title">
+                                    <a class="article-title text-decoration-none text-white" href="#">Tips To Help You Quickly prepare Your Lunch</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-uppercase mt-4 mb-3">Featured Author</h3>
+                        <div class="author-content d-flex">
+                            <img class="avatar img-fluid" src="../assets/avatar.jpg" alt="author-avatar">
+                            <div class="ps-3 author-text">
+                                <h3 class="pt-2 author-name">John Doe</h3>
+                                <span>Lorem ipsum dolor sit amet, consectur adiscipling elit.
+                                    Nam viverra euismod odio, gravida pelle, consectur adiscipling elit.
+                                </span>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -85,7 +109,7 @@ section {
         border-bottom: 1px dashed $text-3;
     }
 
-    img {
+    .post-img {
         width: 50px;
         height: 50px;
         object-fit: cover;
@@ -99,6 +123,42 @@ section {
     span  {
         font-size: $minor-fs;
         color: $text-3;
+    }
+
+    .post-card {
+        position: relative;
+    }
+
+    .post-content { 
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        right: 20px;
+    }
+        .category {
+            font-weight: $medium-fw;
+            font-size: $minor-fs;
+            background-color: $background-4;
+        }
+
+        .post-title {
+            font-size: $medium-fs;
+            font-weight: $extrastrong-fw;
+        }
+
+    .article-title {
+        font-size: $big-fs;
+    }
+
+    .avatar {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .author-name {
+        font-size: $semibig-fs;
+        font-weight: $strong-fw;
     }
 
 </style>
