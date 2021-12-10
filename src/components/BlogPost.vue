@@ -85,6 +85,24 @@
                             </ul>
                         </nav>
 
+                    <h3 class="text-uppercase pt-5">Find us on Facebook</h3>
+
+                    <div class="d-flex pt-4 pb-5 align-items-center">
+
+                        <div class="custom-separator">
+                            
+                        </div>
+
+                        <div class="d-flex flex-column">
+
+                            <span class="ps-3 okler-themes">
+                                Okler Themes
+                            </span>
+
+                        </div>
+
+                  </div>
+
               </div>
           </div>
       </div>
@@ -151,5 +169,18 @@ section {
     .instagram-content {
         cursor: pointer;
     }
+
+    .custom-separator {
+        width: 5px;
+        height: 50px;
+        background-color: $background-3;
+    }
+
+    .okler-themes {
+        color: $text-4;
+        font-size: $medium-fs;
+        cursor: pointer;
+    }
+
 
 </style>
