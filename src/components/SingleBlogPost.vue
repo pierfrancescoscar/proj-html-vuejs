@@ -1,35 +1,47 @@
 <template>
 
-        <li class="list-unstyled">
-            <span>{{dateNumber}}</span>
-            <span>{{dateMonth}}</span>
+<li class="list-unstyled">
+            
 
-            <img class="img-fluid" :src="require(`@/assets/${image}.jpg`)" :alt="title">
+            <img class="img-fluid pb-3" :src="require(`@/assets/${image}.jpg`)" :alt="title">
 
-            <a class="h3 text-decoration-none" :href="url">
-                {{title}}
-            </a>
+    <div class="blog-main-content d-flex">
 
-            <p>
-                {{description}}
-            </p>
+            <div class="post-date d-flex flex-column text-center pe-3">
+                <span class="date-number py-3 px-2">{{dateNumber}}</span>
+                <span class="date-month py-1 px-2 text-uppercase">{{dateMonth}}</span>
+            </div>
 
-        <div class="blog-footer d-flex align-items-center">
+        <div class="blog-content">
+                    <div class="heading-blog">
+                        <a class="text-decoration-none" href="#">
+                            {{title}}
+                        </a>
 
-            <i class="far fa-user"></i>
-                <span class="post-data">By {{author}}</span>
-            <i class="far fa-folder"></i>
-                <span class="post-data">{{category}}</span>
-            <i class="far fa-comments"></i>
-                <span class="post-data">{{comments}}</span>
+                        <p class="pt-3">
+                            {{description}}
+                        </p>
+                    </div>
 
-            <button class="rounded text-uppercase px-2">
-                Read More
-            </button>
+                <div class="blog-footer d-flex align-items-center pb-3">
 
+                    <i class="far fa-user pe-2"></i>
+                        <span class="post-data pe-2">By {{author}}</span>
+                    <i class="far fa-folder pe-2"></i>
+                        <span class="post-data pe-2">{{category}}</span>
+                    <i class="far fa-comments pe-2"></i>
+                        <span class="post-data pe-2">{{comments}}</span>
+
+                    <button class="rounded text-uppercase px-2">
+                        Read More
+                    </button>
+
+                </div>
         </div>
 
-        </li>
+    </div>
+
+</li>
   
 </template>
 
@@ -56,6 +68,7 @@ export default {
 a {
     color: $text-9;
     font-weight: $strong-fw;
+    font-size: $big-fs;
 }
 
 p {
@@ -80,5 +93,25 @@ button {
     color: $text-4;
 }
 
+.blog-footer {
+    border-bottom: 1px solid $border-11;
+}
+    span {
+        cursor: pointer;
+    }
+
+.date-number {
+    background-color: $background-2;
+    color: $text-9;
+    font-size: $medium-fs;
+    font-weight: $strong-fw;
+}
+
+.date-month {
+    background-color: $background-7;
+    color: $text-1;
+    font-size: $minor-fs;
+    font-weight: $strong-fw;
+}
 
 </style>
