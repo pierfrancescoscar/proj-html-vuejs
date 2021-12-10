@@ -25,16 +25,24 @@
 
                 <div class="blog-footer d-flex align-items-center pb-3">
 
-                    <i class="far fa-user pe-2"></i>
-                        <span class="post-data pe-2">By {{author}}</span>
-                    <i class="far fa-folder pe-2"></i>
-                        <span class="post-data pe-2">{{category}}</span>
-                    <i class="far fa-comments pe-2"></i>
-                        <span class="post-data pe-2">{{comments}}</span>
+                    <div class="blog-footer-data flex-grow-1 align-items-center">
 
-                    <button class="rounded text-uppercase px-2">
-                        Read More
-                    </button>
+                        <i class="far fa-user pe-2"></i>
+                            <span class="post-data pe-2">By {{author}}</span>
+                        <i class="far fa-folder pe-2"></i>
+                            <span class="post-data pe-2">{{category}}</span>
+                        <i class="far fa-comments pe-2"></i>
+                            <span class="post-data pe-2">{{comments}}</span>
+
+                    </div>
+
+                    <div class="blog-cta">
+
+                        <button class="rounded text-uppercase px-2">
+                            Read More
+                        </button>
+
+                    </div>
 
                 </div>
         </div>
