@@ -16,6 +16,8 @@
       <PostList :popular="popularLinks" :recent="recentLinks" />
       <!-- Categories Blue Bar -->
       <Categories :categories="categories" />
+      <!-- All Blog Post List -->
+      <BlogPost :blogPost="blogPost" />
     </main>
   </div>
 </template>
@@ -27,6 +29,8 @@ import Header from '@/components/Header.vue';
 import MainArticles from '@/components/MainArticles.vue';
 import PostList from '@/components/PostList.vue';
 import Categories from '@/components/Categories.vue';
+import BlogPost from '@/components/BlogPost.vue';
+
 
 
 export default {
@@ -38,6 +42,7 @@ export default {
     MainArticles,
     PostList,
     Categories,
+    BlogPost,
     
   },
   data() {
@@ -250,6 +255,68 @@ export default {
                 },
             ],
 
+            blogPost: [
+                {
+                    image: 'blog-54',
+                    title: 'How To Make Friends as a Grown-Up',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    dateNumber: '12',
+                    dateMonth: 'Jan',
+                    author: 'John Doe',
+                    category: 'Lifestyle, Travel',
+                    comments: '12 Comments'
+
+                },
+
+                {
+                    image: 'blog-55 (1)',
+                    title: 'Simple Ways to Have a Pretty Face',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    dateNumber: '12',
+                    dateMonth: 'Jan',
+                    author: 'John Doe',
+                    category: 'Photography, Travel',
+                    comments: '12 Comments'
+
+                },
+
+                {
+                    image: 'blog-56 (1)',
+                    title: 'Ranking The Greatest Players in Basketball',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    dateNumber: '12',
+                    dateMonth: 'Jan',
+                    author: 'John Doe',
+                    category: 'Sports, Business',
+                    comments: '12 Comments'
+
+                },
+
+                {
+                    image: 'blog-58 (1)',
+                    title: 'Top Camper Trailer Towing Tips',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    dateNumber: '12',
+                    dateMonth: 'Jan',
+                    author: 'John Doe',
+                    category: 'Lifestyle, Travel',
+                    comments: '12 Comments'
+
+                },
+
+                {
+                    image: 'blog-58 (1)',
+                    title: '10 Best Travel Tips After 5 Years Traveling the World',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                    dateNumber: '8',
+                    dateMonth: 'Jan',
+                    author: 'John Doe',
+                    category: 'Travel, Lifestyle',
+                    comments: '12 Comments'
+
+                },
+                
+            ],
             
         }
     }
