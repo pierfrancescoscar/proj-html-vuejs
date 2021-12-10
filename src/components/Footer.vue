@@ -3,10 +3,15 @@
       <section class="container">
           <div class="row">
               <div class="col-3">
-                  Footer 1
+                  <h3 class="text-white text-uppercase">About the Blog</h3>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet.</p>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eligendi cumque suscipit accusantium...</p>
+                  <h3 class="text-white text-uppercase view-more">View more
+                      <i class="fas fa-chevron-right"></i>
+                  </h3>
               </div>
               <div class="col-3">
-                  Footer 2
+                  <h3 class="text-white text-uppercase">Recent Posts</h3>
               </div>
               <div class="col-3">
                   Footer 3
@@ -35,5 +40,23 @@ export default {
 section {
     background-color: $background-8;
 }
+     h3 {
+        color: $text-7;
+        font-weight: $strong-fw;
+        font-size: $medium-fs;
 
+    }
+
+    p {
+        font-size: $minor-fs;
+        color: $text-5;
+    }
+
+    i {
+        font-size: $minor-fs;
+    }
+
+    .view-more {
+        cursor: pointer;
+    }
 </style>
