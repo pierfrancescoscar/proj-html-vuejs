@@ -305,7 +305,7 @@ export default {
                 },
 
                 {
-                    image: 'blog-58 (1)',
+                    multipleImages: ['blog-13', 'blog-16', 'blog-20', 'blog-23', 'blog-29', 'blog-40'],
                     title: '10 Best Travel Tips After 5 Years Traveling the World',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                     dateNumber: '8',

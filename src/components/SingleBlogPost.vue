@@ -1,11 +1,23 @@
 <template>
 
-<li class="list-unstyled">
+<li class="list-unstyled mb-5">
             
+            <!-- Normal Single Blog Post Photos -->
+            <img v-if="multipleImages == null" class="img-fluid" :src="require(`@/assets/${image}.jpg`)" :alt="title">
 
-            <img class="img-fluid pb-3" :src="require(`@/assets/${image}.jpg`)" :alt="title">
+            <!-- Last Blog Post with Multiple Photos -->
+            <div class="d-flex flex-wrap" v-else>
 
-    <div class="blog-main-content d-flex">
+                <div class="multiple-blog-photos"
+                v-for="(element, index) in multipleImages" :key="`image-${index}`">
+
+                    <img class="img-fluid" :src="require(`@/assets/${element}.jpg`)" :alt="title">
+
+                </div>
+
+            </div>
+
+    <div class="blog-main-content pt-3 d-flex">
 
             <div class="post-date d-flex flex-column text-center pe-3">
                 <span class="date-number py-3 px-2">{{dateNumber}}</span>
@@ -65,6 +77,7 @@ export default {
         author: String,
         category: String,
         comments: String,
+        multipleImages: Array,
     }
 
 }
@@ -121,5 +134,11 @@ button {
     font-size: $minor-fs;
     font-weight: $strong-fw;
 }
+
+.multiple-blog-photos {
+    width: calc(100% / 3);
+}
+
+
 
 </style>
