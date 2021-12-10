@@ -49,7 +49,14 @@ section {
     li {
         // width: calc(100% / 3);
         position: relative;
+        cursor: pointer;
     
+    }
+
+    img {
+        &:hover {
+            filter: grayscale(1);
+        }
     }
 
     span {
