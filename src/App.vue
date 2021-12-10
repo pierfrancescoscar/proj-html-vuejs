@@ -21,7 +21,10 @@
     </main>
 
     <footer>
+        <!-- Main Footer Section -->
         <Footer :recentPosts="recentFooterPosts" />
+        <!-- Footer Copyright Section -->
+        <BottomFooter />
     </footer>
   </div>
 </template>
@@ -35,6 +38,7 @@ import PostList from '@/components/PostList.vue';
 import Categories from '@/components/Categories.vue';
 import BlogPost from '@/components/BlogPost.vue';
 import Footer from '@/components/Footer.vue';
+import BottomFooter from '@/components/BottomFooter.vue';
 
 
 
@@ -49,6 +53,7 @@ export default {
     Categories,
     BlogPost,
     Footer,
+    BottomFooter,
     
   },
   data() {

@@ -79,10 +79,9 @@
                   </nav>
               </div>
               <div class="col-3">
-                  Footer 4
-              </div>
-              <div class="col-3">
-                  Footer 5
+
+                <h3 class="text-white text-uppercase">Categories</h3>
+
               </div>
           </div>
       </section>
