@@ -21,7 +21,7 @@
     </main>
 
     <footer>
-        <Footer />
+        <Footer :recentPosts="recentFooterPosts" />
     </footer>
   </div>
 </template>
@@ -356,6 +356,22 @@ export default {
 
                 {
                     text: 'Travel',
+                    url: '/',
+                },
+            ],
+
+            recentFooterPosts: [
+                {
+                    image: 'our-office-4-square',
+                    text: 'Lorem ipsum dolor sit, consectur adiscipling elit.',
+                    date: '12:53 AM Dec 19th',
+                    url: '/',
+                },
+
+                {
+                    image: 'our-office-5-square',
+                    text: 'Lorem ipsum dolor sit, consectur adiscipling elit.',
+                    date: '12:53 AM Dec 19th',
                     url: '/',
                 },
             ],

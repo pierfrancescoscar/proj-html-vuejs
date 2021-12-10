@@ -12,6 +12,32 @@
               </div>
               <div class="col-3">
                   <h3 class="text-white text-uppercase">Recent Posts</h3>
+                    <nav>
+                            <ul class="ps-0">
+                                <li class="list-unstyled pe-2" v-for="(element, index) in recentPosts" :key="`post-${index}`">
+
+                                    <div class="d-flex pt-2">
+
+                                        <div class="pe-3">
+                                            <img class="rounded-circle" :src="require(`@/assets/${element.image}.jpg`)" alt="recent-post-feed">
+                                        </div>
+
+                                        <div class="d-flex flex-column">
+
+                                            <a class="text-decoration-none" :href="element.url">
+                                                {{element.text}}
+                                            </a>
+
+                                            <span>
+                                                {{element.date}}
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </li>
+                            </ul>
+                    </nav>
               </div>
               <div class="col-3">
                   Footer 3
@@ -30,6 +56,9 @@
 <script>
 export default {
     name: 'Footer',
+    props: {
+        recentPosts: Array,
+    }
 
 }
 </script>
@@ -52,8 +81,23 @@ section {
         color: $text-5;
     }
 
+    a {
+        color: $text-2;
+        font-size: $minor-fs;
+    }
+
     i {
         font-size: $minor-fs;
+    }
+
+    span {
+        color: $text-5;
+        font-size: $minor-fs;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
     }
 
     .view-more {
