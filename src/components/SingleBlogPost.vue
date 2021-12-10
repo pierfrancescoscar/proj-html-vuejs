@@ -139,6 +139,4 @@ button {
     width: calc(100% / 3);
 }
 
-
-
 </style>
