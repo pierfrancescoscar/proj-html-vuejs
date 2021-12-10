@@ -19,6 +19,10 @@
       <!-- All Blog Post List -->
       <BlogPost :blogPost="blogPost" :instaPost="instagramPhotos" :instaTags="instaTags" />
     </main>
+
+    <footer>
+        <Footer />
+    </footer>
   </div>
 </template>
 
@@ -30,6 +34,7 @@ import MainArticles from '@/components/MainArticles.vue';
 import PostList from '@/components/PostList.vue';
 import Categories from '@/components/Categories.vue';
 import BlogPost from '@/components/BlogPost.vue';
+import Footer from '@/components/Footer.vue';
 
 
 
@@ -43,6 +48,7 @@ export default {
     PostList,
     Categories,
     BlogPost,
+    Footer,
     
   },
   data() {
