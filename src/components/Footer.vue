@@ -2,7 +2,8 @@
   <section class="container-fluid p-5">
       <section class="container">
           <div class="row">
-              <div class="col-3">
+              <div class="col-3 about">
+                  <img class="getintouch" src="../assets/porto_getintouch-01.png" alt="get-in-touch">
                   <h3 class="text-white text-uppercase pb-3">About the Blog</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet.</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eligendi cumque suscipit accusantium...</p>
@@ -91,16 +92,6 @@
                             </li>
                         </ul>
                     </nav>
-
-
-                    <!-- <div v-for="(element, index) in footerCategories" :key="`category-${index}`" class="category-container">
-
-                        <a class="footer-categories text-uppercase text-decoration-none rounded p-2" :href="element.url" >
-                        {{element.text}}
-                        </a>
-
-                    </div> -->
-
               </div>
           </div>
       </section>
@@ -169,5 +160,17 @@ section {
         font-weight: $strong-fw;
         background-color: $background-12;
 
+    }
+
+    .about {
+        position: relative;
+    }
+
+    .getintouch {
+        object-fit: contain;
+        width: 150px;
+        height: 80px;
+        position: absolute;
+        top: -106px;
     }
 </style>
