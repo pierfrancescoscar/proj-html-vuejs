@@ -376,7 +376,6 @@ export default {
                 },
             ],
 
-            
         }
     }
 }

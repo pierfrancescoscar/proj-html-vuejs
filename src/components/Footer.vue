@@ -40,7 +40,43 @@
                     </nav>
               </div>
               <div class="col-3">
-                  Footer 3
+                  <h3 class="text-white text-uppercase">Recent Comments</h3>
+                  <nav>
+                      <ul class="ps-0">
+                          <li class="list-unstyled">
+                              <a class="text-decoration-none" href="#">
+                                  <i class="blue-arrow fas fa-chevron-right pe-2"></i>
+                                  <strong>John Doe</strong> commented on <strong>
+                                      <span class="blue-link">
+                                          lorem ipsum dolor sit amet.
+                                      </span>
+                                      </strong>
+                              </a>
+
+                              <div class="date">
+                                <span>12:55 AM Dec 19th</span>
+                              </div>
+
+                          </li>
+
+                          <li>
+
+                              <a class="text-decoration-none" href="#">
+                                  <i class="blue-arrow fas fa-chevron-right pe-2"></i>
+                                  <strong>John Doe</strong> commented on 
+                                  <strong>
+                                    <span class="blue-link">lorem ipsum dolor sit amet.
+                                    </span>
+                                        </strong>
+                              </a>
+
+                              <div class="date">
+                                <span>12:55 AM Dec 19th</span>
+                              </div>
+
+                          </li>
+                      </ul>
+                  </nav>
               </div>
               <div class="col-3">
                   Footer 4
@@ -102,5 +138,9 @@ section {
 
     .view-more {
         cursor: pointer;
+    }
+
+    .blue-link, .blue-arrow  {
+        color: $text-4;
     }
 </style>
