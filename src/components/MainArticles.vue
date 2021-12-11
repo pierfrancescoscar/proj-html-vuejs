@@ -6,18 +6,32 @@
                   <nav>
                       <ul class="d-flex flex-wrap ps-0">
                           <li class="col-4 list-unstyled pe-4" v-for="(post, index) in articles" :key="`article-${index}`">
+
                               <div>
                                   <img class="img-fluid" :src="require(`@/assets/${post.image}.jpg`)" :alt="post.text">
 
                                     <div class="post-content p-3">
+
                                         <div class="category-tag pb-3">
+
                                             <span class="text-white text-uppercase p-2 rounded">
                                                 {{post.category}}
                                             </span>
+
                                         </div>
                                         <div class="post-title">
+
                                             <a class="text-decoration-none text-white" :href="post.url">{{post.text}}</a>
+
+                                            <div class="hover-text">
+                                                <a class="text-decoration-none addictional-text" href="#">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                     Voluptatem dolore, quia eaque veniam quibusdam voluptates optio voluptas fugit possimus, deleniti cumque!
+                                                </a>
+                                            </div>
+
                                         </div>
+
                                     </div>
                               </div>
                           </li>
@@ -80,6 +94,19 @@ section {
         left: 0px;
         right: 20px;
     }
+
+    .addictional-text {
+        display: none;
+        font-size: $minor-fs;
+        color: $text-5;
+        font-weight: $strong-fw;
+    }
+
+    li:hover .addictional-text {
+        display: block;
+    }
+
+
         
     
 </style>
