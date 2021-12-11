@@ -168,6 +168,10 @@ section {
         font-size: $medium-fs;
     }
 
+    .tweets-container {
+        cursor: pointer;
+    }
+
     .tweet-date {
         color: $text-4;
         font-size: $minor-fs;
