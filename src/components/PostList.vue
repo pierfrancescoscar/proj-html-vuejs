@@ -221,4 +221,8 @@ img {
     transition: filter 0.4s linear;
 
 }
+
+.hover-text a:hover {
+  color: $text-5;
+}
 </style>

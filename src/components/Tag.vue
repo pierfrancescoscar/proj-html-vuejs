@@ -42,6 +42,9 @@ a {
     color: $text-1;
     font-weight: $strong-fw;
     font-size: $minor-fs;
+    &:hover {
+        color: $text-1;
+    }
 }
 
 </style>

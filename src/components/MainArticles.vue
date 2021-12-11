@@ -119,4 +119,8 @@ li:hover .addictional-text {
   display: block;
 
 }
+
+.hover-text a:hover {
+  color: $text-5;
+}
 </style>

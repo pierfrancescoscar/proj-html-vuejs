@@ -161,6 +161,9 @@ section {
         font-size: $minor-fs;
         font-weight: $strong-fw;
         background-color: $background-12;
+            &:hover {
+                color: $text-1;
+            }
 
     }
 

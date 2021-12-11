@@ -48,6 +48,9 @@ export default {
         color: $text-1;
         font-size: $medium-fs;
         font-weight: $medium-fw;
+        &:hover {
+            color: white;
+        }
     }
 
 </style>

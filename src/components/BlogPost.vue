@@ -154,8 +154,10 @@ i {
   font-size: $minor-fs;
   background-color: $background-7;
   font-weight: $strong-fw;
+    &:hover {
+      color: $text-1;
+    }
 }
-
 .tweet {
   color: $text-3;
   font-size: $medium-fs;
