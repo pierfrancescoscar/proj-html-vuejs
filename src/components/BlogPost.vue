@@ -20,26 +20,17 @@
                             
                       </ul>
                   </nav>
-
-                  <div class="select-page d-flex justify-content-end">
-                      <div class="numbered-pages rounded">
-                          <span class="select icon">
-                              <i class="arrow-icon fas fa-chevron-left"></i>
-                          </span>
-                          <span class="select one">
-                              1
-                          </span>
-                          <span class="select two">
-                              2
-                          </span>
-                          <span class="select three">
-                              3
-                          </span>
-                          <span class="select icon-2">
-                              <i class="arrow-icon fas fa-chevron-right"></i>
-                          </span>
-                      </div>
-                  </div>
+                        <div class="page-select d-flex justify-content-end">
+                            <a href="#">
+                                <i class="arrow-icon fas fa-chevron-left"></i>
+                            </a>
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">
+                                <i class="arrow-icon fas fa-chevron-right"></i>
+                            </a>
+                        </div>
               </div>
               <div class="col-4">
                   <h3 class="text-uppercase pb-2">Latest from Twitter</h3>
@@ -100,7 +91,7 @@
                         <nav>
                             <ul class="d-flex ps-0">
                                 <li class="list-unstyled pe-2" v-for="(element, index) in instaTags" :key="`tag-${index}`">
-                                    <a class="text-decoration-none text-uppercase px-2 py-1 rounded-pill" :href="element.url">{{element.text}}</a>
+                                    <a class="tags text-decoration-none text-uppercase px-2 py-1 rounded-pill" :href="element.url">{{element.text}}</a>
                                 </li>
                             </ul>
                         </nav>
@@ -165,7 +156,7 @@ section {
         font-size: $big-fs;
     }
 
-    a {
+    .tags {
         color: $text-1;
         font-size: $minor-fs;
         background-color: $background-7;
@@ -214,13 +205,36 @@ section {
         font-size: $minor-fs;
     }
 
-    .icon, .one, .two {
-        border-right: 1px solid grey;
+    .page-select {
+    display: inline-block;
     }
 
-    .icon-2 {
-        border-left: 1px solid grey;
+    .page-select a {
+    color: $text-4;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
     }
+
+    .page-select a.active {
+    background-color: $background-4;
+    color: white;
+    border: 1px solid $border-7;
+    }
+
+    .page-select a:hover:not(.active) {background-color: transparent;}
+
+    .page-select a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+
+    .page-select a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    }
+
 
 
 </style>
