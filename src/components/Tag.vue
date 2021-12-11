@@ -31,7 +31,7 @@ li {
     width: 150px;
     cursor: pointer;
     &:hover {
-        outline: 5px solid $border-8;
+        background-color: #32383D;
     }
     
 }
