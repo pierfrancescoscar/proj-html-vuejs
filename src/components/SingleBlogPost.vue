@@ -85,6 +85,8 @@ export default {
 
 <style scoped lang="scss">
 @import '@/style/vars.scss';
+@import '@/style/globals.scss';
+
 
 a {
     color: $text-9;

@@ -45,6 +45,8 @@ export default {
 
 <style scoped lang="scss">
 @import '@/style/vars.scss';
+@import '@/style/globals.scss';
+
 
 section {
     background-color: $background-9;

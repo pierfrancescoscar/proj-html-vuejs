@@ -21,6 +21,8 @@ export default {
 
 <style scoped lang="scss">
 @import '@/style/vars.scss';
+@import '@/style/globals.scss';
+
 
 ul {
     border: 1px solid red;

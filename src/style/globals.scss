@@ -1,5 +1,11 @@
 // General Styles
+@import '@/style/vars.scss';
+
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans' 'Font Awesome 6 Free', sans-serif;
+}
+
+a:hover {
+    color: $text-4;
 }
