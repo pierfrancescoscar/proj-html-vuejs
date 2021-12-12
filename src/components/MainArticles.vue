@@ -2,11 +2,11 @@
   <section class="container-fluid p-5">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div>
           <nav>
-            <ul class="d-flex flex-wrap ps-0">
+            <ul class="d-flex justify-content-between flex-wrap ps-0">
               <li
-                class="col-4 list-unstyled pe-4"
+                class="list-unstyled"
                 v-for="(post, index) in articles"
                 :key="`article-${index}`"
               >
@@ -74,6 +74,7 @@ section {
 li {
   position: relative;
   cursor: pointer;
+  width: calc(96% / 3);
   &:hover img {
     filter: brightness(0.4);
   }
