@@ -37,7 +37,7 @@
 
           <div class="tweets-container d-flex">
             <div class="twitter-icon pe-3">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter twitter-bird"></i>
             </div>
 
             <div class="tweets-text d-flex flex-column">
@@ -50,7 +50,7 @@
           </div>
 
           <div class="tweets-container d-flex pt-4 pb-5">
-            <div class="twitter-icon pe-3">
+            <div class="twitter-icon twitter-bird pe-3">
               <i class="fab fa-twitter"></i>
             </div>
 
@@ -235,4 +235,6 @@ i {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+
 </style>
